@@ -26,6 +26,7 @@
   }
 }
 
+
 .logo-small {
   width: 44.67px;
   margin-top: 1.25rem;
@@ -199,4 +200,16 @@
   height: 0;
   border: 3px solid $accent-b;
   transform: rotate(102.02deg);
+}
+
+
+.landscape {
+  margin-left: 150px;
+  margin-top:30px;
+  transform: scale(1.4);
+
+  @include media-breakpoint-down('xl') {
+    transform: scale(1.1);
+    margin-left: 50px;
+  }
 }

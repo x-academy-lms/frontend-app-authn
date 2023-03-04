@@ -15,7 +15,7 @@ const LargeLayout = ({ intl }) => (
         <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
       </Hyperlink>
       <div className="min-vh-100 d-flex align-items-center">
-        <Image className="" style={{marginLeft: 150, transform: "scale(1.5)"}} alt={getConfig().SITE_NAME} src={"https://res.cloudinary.com/dd9nnmzkf/image/upload/v1677946528/login-landscape.svg"} />
+        <Image className="landscape" alt={getConfig().SITE_NAME} src={"https://res.cloudinary.com/dd9nnmzkf/image/upload/v1677949204/djezzy-landscape.svg"} />
       </div>
     </div>
     {/* <div className="col-md-3 bg-white p-0">
