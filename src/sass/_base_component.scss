@@ -20,6 +20,10 @@
     width: 50vw;
     margin-top: 4rem;
   }
+  > div:first-child{
+    height: fit-content;
+    align-self: center;
+  }
 }
 
 .logo-small {

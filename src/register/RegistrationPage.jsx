@@ -548,7 +548,7 @@ const RegistrationPage = (props) => {
               id="register-user"
               name="register-user"
               type="submit"
-              variant="brand"
+              variant="danger"
               className="register-stateful-button-width mt-4 mb-4"
               state={submitState}
               labels={{
