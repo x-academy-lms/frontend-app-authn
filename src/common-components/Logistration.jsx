@@ -23,7 +23,7 @@ import { backupRegistrationForm } from '../register/data/actions';
 import {
   tpaProvidersSelector,
 } from './data/selectors';
-import LogoImage from './images/logo_image';
+// import LogoImage from './images/logo_image';
 import messages from './messages';
 
 const Logistration = (props) => {
@@ -81,7 +81,7 @@ const Logistration = (props) => {
     <BaseComponent>
       <div>
         <div className="d-flex flex-column align-items-center">
-          <img className="icon-image" src={LogoImage} alt="x-academy" />
+          <img className="icon-image pb-3" style={{width:'300px'}} src={"http://local.overhang.io:8000/theming/asset/images/logo.png"} alt="x-academy" />
         </div>
         {institutionLogin
           ? (
