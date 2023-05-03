@@ -22,10 +22,13 @@ const BaseComponent = ({ children, showWelcomeBanner }) => {
 
   return (
     <>
-      {getConfig().ENABLE_COOKIE_POLICY_BANNER ? <CookiePolicyBanner languageCode={getLocale()} /> : null}
+      {/* {getConfig().ENABLE_COOKIE_POLICY_BANNER ? <CookiePolicyBanner languageCode={getLocale()} /> : null} */}
       <div className="col-md-12 extra-large-screen-top-stripe" />
-      <div className="layout">
-        <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
+      {/* <div style={{width:'100vw', height:'100vh', display: 'flex', justifyContent: 'end', alignItems:'center' }}>
+
+      </div> */}
+      <div className="layout" style={{width:'100vw', height:'100vh', display: 'flex', justifyContent: 'center', alignItems:'center' }} >
+        {/* <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
           {authenticatedUser ? <AuthSmallLayout username={username} /> : <SmallLayout />}
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.medium.minWidth} maxWidth={breakpoints.large.maxWidth - 1}>
@@ -33,9 +36,9 @@ const BaseComponent = ({ children, showWelcomeBanner }) => {
         </MediaQuery>
         <MediaQuery minWidth={breakpoints.extraLarge.minWidth} maxWidth={breakpoints.extraExtraLarge.maxWidth}>
           {authenticatedUser ? <AuthLargeLayout username={username} /> : <LargeLayout />}
-        </MediaQuery>
-
-        <div className={classNames('content', { 'align-items-center mt-0': authenticatedUser })}>
+        </MediaQuery> */}
+        
+        <div className={classNames('content d-flex w-100', { ' align-items-center ': authenticatedUser })}>
           {children}
         </div>
       </div>

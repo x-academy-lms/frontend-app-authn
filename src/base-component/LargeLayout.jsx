@@ -9,15 +9,8 @@ import PropTypes from 'prop-types';
 import messages from './messages';
 
 const LargeLayout = ({ intl }) => (
-  <div className="w-50 d-flex">
-    <div className="col-md-9 ">
-      <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
-        <Image className="logo position-absolute" alt={getConfig().SITE_NAME} src={getConfig().LOGO_WHITE_URL} />
-      </Hyperlink>
-      <div className="min-vh-100 d-flex align-items-center">
-        <Image className="landscape" alt={getConfig().SITE_NAME} src={"https://res.cloudinary.com/dd9nnmzkf/image/upload/v1677949204/djezzy-landscape.svg"} />
-      </div>
-    </div>
+  <div className=" d-flex">
+    
     {/* <div className="col-md-3 bg-white p-0">
       <svg className="ml-n1 w-100 h-100 large-screen-svg-primary" preserveAspectRatio="xMaxYMin meet">
         <g transform="skewX(171.6)">

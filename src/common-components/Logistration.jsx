@@ -23,6 +23,7 @@ import { backupRegistrationForm } from '../register/data/actions';
 import {
   tpaProvidersSelector,
 } from './data/selectors';
+import LogoImage from './images/logo_image';
 import messages from './messages';
 
 const Logistration = (props) => {
@@ -79,6 +80,9 @@ const Logistration = (props) => {
   return (
     <BaseComponent>
       <div>
+        <div className="d-flex flex-column align-items-center">
+          <img className="icon-image" src={LogoImage} alt="x-academy" />
+        </div>
         {institutionLogin
           ? (
             <Tabs defaultActiveKey="" id="controlled-tab" onSelect={handleInstitutionLogin}>
