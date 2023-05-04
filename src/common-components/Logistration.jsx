@@ -83,8 +83,8 @@ const Logistration = (props) => {
         <div className="d-flex flex-column align-items-center">
           {/* <img className="icon-image pb-3" style={{width:'300px'}} src={"http://local.overhang.io:8000/theming/asset/images/logo.png"} alt="x-academy" /> */}
           { (process.env.NODE_ENV !== 'production')
-            ? <img className="icon-image pb-3" style={{width:'300px'}} src={"http://local.overhang.io:8000/theming/asset/images/logo.png"} alt="x-academy" />
-            : <img className="icon-image pb-3" style={{width:'300px'}} src={`${getConfig().X_BASE_URL}/theming/asset/images/logo.png`} alt="x-academy" /> }
+            ? <img className="icon-image pb-3" style={{width:'300px'}} src={getConfig().LOGO_URL} alt="x-academy" />
+            : <img className="icon-image pb-3" style={{width:'300px'}} src={getConfig().LOGO_URL} alt="x-academy" /> }
         </div>
         {institutionLogin
           ? (
