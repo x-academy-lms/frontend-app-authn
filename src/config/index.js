@@ -22,6 +22,8 @@ const configuration = {
   // Miscellaneous
   GENERAL_RECOMMENDATIONS: process.env.GENERAL_RECOMMENDATIONS || '[]',
   INFO_EMAIL: process.env.INFO_EMAIL || '',
+  // URL
+  X_BASE_URL: 'xacademydz.com',
 };
 
 export default configuration;

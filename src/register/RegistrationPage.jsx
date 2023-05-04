@@ -485,7 +485,7 @@ const RegistrationPage = (props) => {
             failureCount={errorCode.count}
             context={{ provider: currentProvider }}
           />
-          <Form id="registration-form"  style={{ display:'flex', flexDirection:'column'}} name="registration-form">
+          <Form id="registration-form" style={{ display: 'flex', flexDirection: 'column'}} name="registration-form">
             <FormGroup
               name="name"
               value={formFields.name}
