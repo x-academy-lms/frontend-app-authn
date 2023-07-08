@@ -36,8 +36,8 @@ const ConfigurableRegistrationForm = (props) => {
     setFormFields,
   } = props;
 
-  let showTermsOfServiceAndHonorCode = false;
-  let showCountryField = false;
+  let showTermsOfServiceAndHonorCode = true;
+  let showCountryField = true;
 
   const formFieldDescriptions = [];
   const honorCode = [];
